@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: vertical-text;
+  }
+  
+  #map-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  #search-container{
+    width: 20%;
+    z-index: 99;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-top: 2%;
+    background-color: #7bd3da;
+    padding: 0.5%;
+    border-radius: 10px;
+    left: 40%;
+    border: solid;
+  }
+  
+  #info-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  #country-name,
+  #capital-name {
+    font-weight: bold;
+  }
+
+
+/* Agrega estilos para los marcadores */
+.custom-marker {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Mostrar el marcador cuando el cursor pasa sobre él */
+  .custom-marker.hovered {
+    opacity: 1;
+  }

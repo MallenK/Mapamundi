@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Agrega esto en el head de tu HTML -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <title>Mapamundi Interactivo</title>
+</head>
+<body>
+  <div id="search-container">
+    <label for="search-input">Buscar país:</label>
+    <input type="text" id="search-input" />
+  </div>
+
+  <div id="map-container"></div>
+  
+  <div id="info-panel">
+    <h2>Información del País</h2>
+    <p><strong>País:</strong> <span id="country-name"></span></p>
+    <p><strong>Capital:</strong> <span id="capital-name"></span></p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
